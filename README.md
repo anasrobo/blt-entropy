@@ -71,13 +71,13 @@ Performs BFS traversal
 Stops when entropy > 0.5 (boundary threshold)
 
 Returns nodes with their entropy scores
-
+```
 ## 📂 File Structure
 ├── kg_entropy.py       # Main implementation
 ├── requirements.txt    # Dependencies
 ├── README.md           # This file
 └── main.py             # main file
-
+```
 # 📈 Performance Metrics
 
 Model	F1 Score	Boundary Precision
