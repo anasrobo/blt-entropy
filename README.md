@@ -45,7 +45,7 @@ Entropy scores:
  
 ## 🧩 How It Works
 1. Knowledge Graph Construction
-# Build graph from text
+ Build graph from text
 processor = KnowledgeGraphProcessor()
 kg = processor.build_graph(text)
 Extracts Subject-Verb-Object triplets
@@ -55,7 +55,7 @@ Creates nodes with BERT embeddings
 Connects entities with semantic relationships
 
 2. Entropy Model Training
-# Train transformer-based entropy predictor
+Train transformer-based entropy predictor
 model = train_entropy_model(kg)
 Uses path sequences between nodes
 
@@ -64,7 +64,7 @@ Predicts semantic drift between sentences
 Transformer architecture adapted from BLT
 
 3. Boundary Detection
-# Detect boundaries starting from any node
+Detect boundaries starting from any node
 entropy_scores = processor.entropy_guided_traversal("prince", model)
 Performs BFS traversal
 
